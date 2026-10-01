@@ -1,0 +1,10 @@
+[Unit]
+Description=Boot R5F then C66x/C7x remote cores after rootfs (BBAI64 + TI SDK 10)
+After=local-fs.target systemd-udevd.service
+
+[Service]
+Type=simple
+ExecStart=/bin/sh /usr/local/bin/rproc-late.sh
+
+[Install]
+WantedBy=multi-user.target

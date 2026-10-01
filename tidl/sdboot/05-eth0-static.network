@@ -1,0 +1,7 @@
+# BBAI64: direct cable to the PC (192.168.1.100, no DHCP server)
+[Match]
+Name=eth0
+
+[Network]
+Address=192.168.1.2/24
+DHCP=no
